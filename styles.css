@@ -1,25 +1,32 @@
-.inputField{
-    
-    margin: 20px auto 10px auto;
-    width: 200px;
+.stylesheet{
+    background-color: rgb(167, 234, 167);
     height: 30px;
     border-radius: 10px;
     border-style: dashed;
     border-color: red;
 }
 
+.input1{
+    min-width: 200px;
+    width: 40%;
+    margin-left: 3px;
+}
+
+.selection{
+    min-width: 70px;
+    width: 17%;
+    margin-left: 2%;
+}
+
+.input2{
+    min-width: 200px;
+    width: 40%;
+    margin-left: 1%;
+}
 .buttonField{
+    background-color: rgb(167, 234, 167);
     margin: 20px auto 10px auto;
-    border-radius: 10px;
     width: 200px;
-    height: 30px;
-    border-style: dashed;
-    border-color: red;
-}
-
-.selectField{
-    margin: 10px;
-    width: 70px;
     height: 30px;
     border-radius: 10px;
     border-style: dashed;
@@ -27,23 +34,17 @@
 }
 
 .textareaField{
-    margin: 10px;
+    background-color: rgb(167, 234, 167);
+    margin: 20px auto 10px auto;
     width: 200px;
     height: 30px;
     border-radius: 10px;
     border-style: dashed;
     border-color: red;
+    text-align: center;
 }
 
 .centered{
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: auto;
+    width: 100px;
 }
-
-.row{
-    margin: 20px auto 10px auto;
-    border-radius: 10px;
-    width: auto;
-}
-
