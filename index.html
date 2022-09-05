@@ -8,7 +8,7 @@
 <body style="background-color: rgb(167, 234, 167);" >
     <div style="display: flex;">
         <div class="input1">
-            <input id="input1" type ="text" class="stylesheet"  style="width: 200px;" oninput="changesCheck('input1')"/>
+            <input id="input1" type ="text" class="stylesheet"  style="width: 200px;" oninput="changesCheck('input1')" required/>
         </div>
 
         <div class = "selection">
@@ -21,15 +21,15 @@
         </div>
 
         <div class="input2">
-            <input id="input2" type ="text" class="stylesheet" style="width: 200px;"  oninput="changesCheck('input2')"/>
+            <input  id="input2" type ="text" class="stylesheet" style="width: 200px;"  oninput="changesCheck('input2')" required/>
         </div>
         
     </div>
-    <div class="centered">
-        <button class="buttonField" onclick="whenButtonClicked()" >подсчитать</button>
+    <div style="display: flex;">
+        <button class="buttonField stylesheet" onclick="whenButtonClicked()" >подсчитать</button>
     </div>
-    <div class="centered">
-        <textarea class = "textareaField " id = "results" ></textarea>
+    <div style="display: flex;">
+        <textarea class = "textareaField stylesheet" id = "results" ></textarea>
     </div>
 
 

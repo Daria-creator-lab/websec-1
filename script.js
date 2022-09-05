@@ -4,17 +4,26 @@ function whenButtonClicked(){
     let value2 = document.getElementById("input2").value;
     let selectAction = document.getElementById("select").value;
     let result = 0;
+    
+ 
 
-    value1 = isNaN (value1) ?  "Incorrect input" : parseFloat(value1);
-    value2 = isNaN (value2) ?  "Incorrect input" : parseFloat(value2);
-
-    if(value1 == "Incorrect input" || value2 == "Incorrect input")
-    {
+    if(isNaN (value1) || value1 ==""){
         document.getElementById("results").innerText = "Incorrect input";
         return;
     }
+    else
+        value1 = parseFloat(value1);
+    
+    if(isNaN (value2 || value2 =="") ){
+        document.getElementById("results").innerText = "Incorrect input";
+        return;
+    }
+    else
+        value2 = parseFloat(value2);
+
 
     console.log(value1,value2,selectAction);
+
 
     switch (selectAction){
         case "plus":
@@ -48,7 +57,7 @@ function changesCheck(fieldName){
 
     let value1 = document.getElementById(fieldName).value;
     
-    document.getElementById(fieldName).style.color = (isNaN (value1) ?  "#FF0000" : "#000000");
+    document.getElementById(fieldName).style.color = (isNaN (value1) ?  "#9D00FF" : "#FF0000");
 
 }
 
