@@ -7,14 +7,14 @@ function whenButtonClicked(){
     
  
 
-    if(isNaN (value1) || value1 ==""){
+    if(isNaN (value1) || value1 == ""){
         document.getElementById("results").innerText = "Incorrect input";
         return;
     }
     else
         value1 = parseFloat(value1);
     
-    if(isNaN (value2 || value2 =="") ){
+    if(isNaN (value2) || value2 == ""){
         document.getElementById("results").innerText = "Incorrect input";
         return;
     }
@@ -39,7 +39,7 @@ function whenButtonClicked(){
             document.getElementById("results").innerText = String(value1) + "*" + String(value2) + "=" + String(result);
             break
         case "div":
-            if (value2 == 0){
+            if (Math.abs(value2) < Number.EPSILON){
                 console.log(value2, "Division by zero");
                 result = "Division by zero"
                 document.getElementById("results").innerText = String(result);
