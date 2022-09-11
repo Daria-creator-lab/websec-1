@@ -5,8 +5,6 @@ function whenButtonClicked(){
     let selectAction = document.getElementById("select").value;
     let result = 0;
     
- 
-
     if(isNaN (value1) || value1 == ""){
         document.getElementById("results").innerText = "Incorrect input";
         return;
@@ -21,9 +19,7 @@ function whenButtonClicked(){
     else
         value2 = parseFloat(value2);
 
-
     console.log(value1,value2,selectAction);
-
 
     switch (selectAction){
         case "plus":
@@ -54,13 +50,7 @@ function whenButtonClicked(){
 
 function changesCheck(fieldName){
     console.log(fieldName);
-
     let value1 = document.getElementById(fieldName).value;
-    
+
     document.getElementById(fieldName).style.color = (isNaN (value1) ?  "#9D00FF" : "#FF0000");
-
-}
-
-function outputResult(){
-
 }
